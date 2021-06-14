@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04FCA220267816E800C86A9B /* BetterAuthenticatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCA21F267816E800C86A9B /* BetterAuthenticatorApp.swift */; };
+		04FCA222267816E800C86A9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCA221267816E800C86A9B /* ContentView.swift */; };
+		04FCA224267816EA00C86A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FCA223267816EA00C86A9B /* Assets.xcassets */; };
+		04FCA227267816EA00C86A9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FCA226267816EA00C86A9B /* Preview Assets.xcassets */; };
+		04FCA232267816EA00C86A9B /* BetterAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCA231267816EA00C86A9B /* BetterAuthenticatorTests.swift */; };
+		04FCA23D267816EA00C86A9B /* BetterAuthenticatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCA23C267816EA00C86A9B /* BetterAuthenticatorUITests.swift */; };
+		04FCA242267816EA00C86A9B /* BetterAuthenticator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 04FCA241267816EA00C86A9B /* BetterAuthenticator WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04FCA247267816EB00C86A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FCA246267816EB00C86A9B /* Assets.xcassets */; };
+		04FCA24E267816EC00C86A9B /* BetterAuthenticator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04FCA24D267816EC00C86A9B /* BetterAuthenticator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04FCA253267816EC00C86A9B /* BetterAuthenticatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCA252267816EC00C86A9B /* BetterAuthenticatorApp.swift */; };
+		04FCA255267816EC00C86A9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCA254267816EC00C86A9B /* ContentView.swift */; };
+		04FCA257267816EC00C86A9B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCA256267816EC00C86A9B /* NotificationController.swift */; };
+		04FCA259267816EC00C86A9B /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCA258267816EC00C86A9B /* NotificationView.swift */; };
+		04FCA25B267816EC00C86A9B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCA25A267816EC00C86A9B /* ComplicationController.swift */; };
+		04FCA25D267816ED00C86A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FCA25C267816ED00C86A9B /* Assets.xcassets */; };
+		04FCA260267816ED00C86A9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FCA25F267816ED00C86A9B /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04FCA22E267816EA00C86A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FCA214267816E700C86A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FCA21B267816E800C86A9B;
+			remoteInfo = BetterAuthenticator;
+		};
+		04FCA239267816EA00C86A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FCA214267816E700C86A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FCA21B267816E800C86A9B;
+			remoteInfo = BetterAuthenticator;
+		};
+		04FCA243267816EA00C86A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FCA214267816E700C86A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FCA240267816EA00C86A9B;
+			remoteInfo = "BetterAuthenticator WatchKit App";
+		};
+		04FCA24F267816EC00C86A9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FCA214267816E700C86A9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04FCA24C267816EC00C86A9B;
+			remoteInfo = "BetterAuthenticator WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04FCA268267816ED00C86A9B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04FCA24E267816EC00C86A9B /* BetterAuthenticator WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA26C267816ED00C86A9B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				04FCA242267816EA00C86A9B /* BetterAuthenticator WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04FCA21C267816E800C86A9B /* BetterAuthenticator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterAuthenticator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FCA21F267816E800C86A9B /* BetterAuthenticatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterAuthenticatorApp.swift; sourceTree = "<group>"; };
+		04FCA221267816E800C86A9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04FCA223267816EA00C86A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FCA226267816EA00C86A9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04FCA228267816EA00C86A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FCA22D267816EA00C86A9B /* BetterAuthenticatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterAuthenticatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FCA231267816EA00C86A9B /* BetterAuthenticatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterAuthenticatorTests.swift; sourceTree = "<group>"; };
+		04FCA233267816EA00C86A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FCA238267816EA00C86A9B /* BetterAuthenticatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterAuthenticatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FCA23C267816EA00C86A9B /* BetterAuthenticatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterAuthenticatorUITests.swift; sourceTree = "<group>"; };
+		04FCA23E267816EA00C86A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FCA241267816EA00C86A9B /* BetterAuthenticator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetterAuthenticator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FCA246267816EB00C86A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FCA248267816EB00C86A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FCA24D267816EC00C86A9B /* BetterAuthenticator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BetterAuthenticator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FCA252267816EC00C86A9B /* BetterAuthenticatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterAuthenticatorApp.swift; sourceTree = "<group>"; };
+		04FCA254267816EC00C86A9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04FCA256267816EC00C86A9B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		04FCA258267816EC00C86A9B /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		04FCA25A267816EC00C86A9B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		04FCA25C267816ED00C86A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04FCA25F267816ED00C86A9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04FCA261267816ED00C86A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FCA262267816ED00C86A9B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04FCA219267816E800C86A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA22A267816EA00C86A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA235267816EA00C86A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA24A267816EC00C86A9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04FCA213267816E700C86A9B = {
+			isa = PBXGroup;
+			children = (
+				04FCA21E267816E800C86A9B /* BetterAuthenticator */,
+				04FCA230267816EA00C86A9B /* BetterAuthenticatorTests */,
+				04FCA23B267816EA00C86A9B /* BetterAuthenticatorUITests */,
+				04FCA245267816EA00C86A9B /* BetterAuthenticator WatchKit App */,
+				04FCA251267816EC00C86A9B /* BetterAuthenticator WatchKit Extension */,
+				04FCA21D267816E800C86A9B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04FCA21D267816E800C86A9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FCA21C267816E800C86A9B /* BetterAuthenticator.app */,
+				04FCA22D267816EA00C86A9B /* BetterAuthenticatorTests.xctest */,
+				04FCA238267816EA00C86A9B /* BetterAuthenticatorUITests.xctest */,
+				04FCA241267816EA00C86A9B /* BetterAuthenticator WatchKit App.app */,
+				04FCA24D267816EC00C86A9B /* BetterAuthenticator WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04FCA21E267816E800C86A9B /* BetterAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				04FCA21F267816E800C86A9B /* BetterAuthenticatorApp.swift */,
+				04FCA221267816E800C86A9B /* ContentView.swift */,
+				04FCA223267816EA00C86A9B /* Assets.xcassets */,
+				04FCA228267816EA00C86A9B /* Info.plist */,
+				04FCA225267816EA00C86A9B /* Preview Content */,
+			);
+			path = BetterAuthenticator;
+			sourceTree = "<group>";
+		};
+		04FCA225267816EA00C86A9B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04FCA226267816EA00C86A9B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04FCA230267816EA00C86A9B /* BetterAuthenticatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				04FCA231267816EA00C86A9B /* BetterAuthenticatorTests.swift */,
+				04FCA233267816EA00C86A9B /* Info.plist */,
+			);
+			path = BetterAuthenticatorTests;
+			sourceTree = "<group>";
+		};
+		04FCA23B267816EA00C86A9B /* BetterAuthenticatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04FCA23C267816EA00C86A9B /* BetterAuthenticatorUITests.swift */,
+				04FCA23E267816EA00C86A9B /* Info.plist */,
+			);
+			path = BetterAuthenticatorUITests;
+			sourceTree = "<group>";
+		};
+		04FCA245267816EA00C86A9B /* BetterAuthenticator WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				04FCA246267816EB00C86A9B /* Assets.xcassets */,
+				04FCA248267816EB00C86A9B /* Info.plist */,
+			);
+			path = "BetterAuthenticator WatchKit App";
+			sourceTree = "<group>";
+		};
+		04FCA251267816EC00C86A9B /* BetterAuthenticator WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04FCA252267816EC00C86A9B /* BetterAuthenticatorApp.swift */,
+				04FCA254267816EC00C86A9B /* ContentView.swift */,
+				04FCA256267816EC00C86A9B /* NotificationController.swift */,
+				04FCA258267816EC00C86A9B /* NotificationView.swift */,
+				04FCA25A267816EC00C86A9B /* ComplicationController.swift */,
+				04FCA25C267816ED00C86A9B /* Assets.xcassets */,
+				04FCA261267816ED00C86A9B /* Info.plist */,
+				04FCA262267816ED00C86A9B /* PushNotificationPayload.apns */,
+				04FCA25E267816ED00C86A9B /* Preview Content */,
+			);
+			path = "BetterAuthenticator WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		04FCA25E267816ED00C86A9B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04FCA25F267816ED00C86A9B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04FCA21B267816E800C86A9B /* BetterAuthenticator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FCA26D267816ED00C86A9B /* Build configuration list for PBXNativeTarget "BetterAuthenticator" */;
+			buildPhases = (
+				04FCA218267816E800C86A9B /* Sources */,
+				04FCA219267816E800C86A9B /* Frameworks */,
+				04FCA21A267816E800C86A9B /* Resources */,
+				04FCA26C267816ED00C86A9B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FCA244267816EA00C86A9B /* PBXTargetDependency */,
+			);
+			name = BetterAuthenticator;
+			productName = BetterAuthenticator;
+			productReference = 04FCA21C267816E800C86A9B /* BetterAuthenticator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04FCA22C267816EA00C86A9B /* BetterAuthenticatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FCA270267816ED00C86A9B /* Build configuration list for PBXNativeTarget "BetterAuthenticatorTests" */;
+			buildPhases = (
+				04FCA229267816EA00C86A9B /* Sources */,
+				04FCA22A267816EA00C86A9B /* Frameworks */,
+				04FCA22B267816EA00C86A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FCA22F267816EA00C86A9B /* PBXTargetDependency */,
+			);
+			name = BetterAuthenticatorTests;
+			productName = BetterAuthenticatorTests;
+			productReference = 04FCA22D267816EA00C86A9B /* BetterAuthenticatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04FCA237267816EA00C86A9B /* BetterAuthenticatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FCA273267816ED00C86A9B /* Build configuration list for PBXNativeTarget "BetterAuthenticatorUITests" */;
+			buildPhases = (
+				04FCA234267816EA00C86A9B /* Sources */,
+				04FCA235267816EA00C86A9B /* Frameworks */,
+				04FCA236267816EA00C86A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FCA23A267816EA00C86A9B /* PBXTargetDependency */,
+			);
+			name = BetterAuthenticatorUITests;
+			productName = BetterAuthenticatorUITests;
+			productReference = 04FCA238267816EA00C86A9B /* BetterAuthenticatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		04FCA240267816EA00C86A9B /* BetterAuthenticator WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FCA269267816ED00C86A9B /* Build configuration list for PBXNativeTarget "BetterAuthenticator WatchKit App" */;
+			buildPhases = (
+				04FCA23F267816EA00C86A9B /* Resources */,
+				04FCA268267816ED00C86A9B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04FCA250267816EC00C86A9B /* PBXTargetDependency */,
+			);
+			name = "BetterAuthenticator WatchKit App";
+			productName = "BetterAuthenticator WatchKit App";
+			productReference = 04FCA241267816EA00C86A9B /* BetterAuthenticator WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		04FCA24C267816EC00C86A9B /* BetterAuthenticator WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04FCA265267816ED00C86A9B /* Build configuration list for PBXNativeTarget "BetterAuthenticator WatchKit Extension" */;
+			buildPhases = (
+				04FCA249267816EC00C86A9B /* Sources */,
+				04FCA24A267816EC00C86A9B /* Frameworks */,
+				04FCA24B267816EC00C86A9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BetterAuthenticator WatchKit Extension";
+			productName = "BetterAuthenticator WatchKit Extension";
+			productReference = 04FCA24D267816EC00C86A9B /* BetterAuthenticator WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04FCA214267816E700C86A9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					04FCA21B267816E800C86A9B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					04FCA22C267816EA00C86A9B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 04FCA21B267816E800C86A9B;
+					};
+					04FCA237267816EA00C86A9B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 04FCA21B267816E800C86A9B;
+					};
+					04FCA240267816EA00C86A9B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					04FCA24C267816EC00C86A9B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 04FCA217267816E700C86A9B /* Build configuration list for PBXProject "BetterAuthenticator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04FCA213267816E700C86A9B;
+			productRefGroup = 04FCA21D267816E800C86A9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04FCA21B267816E800C86A9B /* BetterAuthenticator */,
+				04FCA22C267816EA00C86A9B /* BetterAuthenticatorTests */,
+				04FCA237267816EA00C86A9B /* BetterAuthenticatorUITests */,
+				04FCA240267816EA00C86A9B /* BetterAuthenticator WatchKit App */,
+				04FCA24C267816EC00C86A9B /* BetterAuthenticator WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04FCA21A267816E800C86A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FCA227267816EA00C86A9B /* Preview Assets.xcassets in Resources */,
+				04FCA224267816EA00C86A9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA22B267816EA00C86A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA236267816EA00C86A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA23F267816EA00C86A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FCA247267816EB00C86A9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA24B267816EC00C86A9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FCA260267816ED00C86A9B /* Preview Assets.xcassets in Resources */,
+				04FCA25D267816ED00C86A9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04FCA218267816E800C86A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FCA222267816E800C86A9B /* ContentView.swift in Sources */,
+				04FCA220267816E800C86A9B /* BetterAuthenticatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA229267816EA00C86A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FCA232267816EA00C86A9B /* BetterAuthenticatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA234267816EA00C86A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FCA23D267816EA00C86A9B /* BetterAuthenticatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04FCA249267816EC00C86A9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FCA257267816EC00C86A9B /* NotificationController.swift in Sources */,
+				04FCA255267816EC00C86A9B /* ContentView.swift in Sources */,
+				04FCA25B267816EC00C86A9B /* ComplicationController.swift in Sources */,
+				04FCA253267816EC00C86A9B /* BetterAuthenticatorApp.swift in Sources */,
+				04FCA259267816EC00C86A9B /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04FCA22F267816EA00C86A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FCA21B267816E800C86A9B /* BetterAuthenticator */;
+			targetProxy = 04FCA22E267816EA00C86A9B /* PBXContainerItemProxy */;
+		};
+		04FCA23A267816EA00C86A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FCA21B267816E800C86A9B /* BetterAuthenticator */;
+			targetProxy = 04FCA239267816EA00C86A9B /* PBXContainerItemProxy */;
+		};
+		04FCA244267816EA00C86A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FCA240267816EA00C86A9B /* BetterAuthenticator WatchKit App */;
+			targetProxy = 04FCA243267816EA00C86A9B /* PBXContainerItemProxy */;
+		};
+		04FCA250267816EC00C86A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04FCA24C267816EC00C86A9B /* BetterAuthenticator WatchKit Extension */;
+			targetProxy = 04FCA24F267816EC00C86A9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04FCA263267816ED00C86A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04FCA264267816ED00C86A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		04FCA266267816ED00C86A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BetterAuthenticator WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = GNT7AT6CLX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BetterAuthenticator WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		04FCA267267816ED00C86A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BetterAuthenticator WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = GNT7AT6CLX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BetterAuthenticator WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		04FCA26A267816ED00C86A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNT7AT6CLX;
+				IBSC_MODULE = BetterAuthenticator_WatchKit_Extension;
+				INFOPLIST_FILE = "BetterAuthenticator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		04FCA26B267816ED00C86A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNT7AT6CLX;
+				IBSC_MODULE = BetterAuthenticator_WatchKit_Extension;
+				INFOPLIST_FILE = "BetterAuthenticator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		04FCA26E267816ED00C86A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BetterAuthenticator/Preview Content\"";
+				DEVELOPMENT_TEAM = GNT7AT6CLX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BetterAuthenticator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04FCA26F267816ED00C86A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BetterAuthenticator/Preview Content\"";
+				DEVELOPMENT_TEAM = GNT7AT6CLX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BetterAuthenticator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FCA271267816ED00C86A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNT7AT6CLX;
+				INFOPLIST_FILE = BetterAuthenticatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterAuthenticator.app/BetterAuthenticator";
+			};
+			name = Debug;
+		};
+		04FCA272267816ED00C86A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNT7AT6CLX;
+				INFOPLIST_FILE = BetterAuthenticatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterAuthenticator.app/BetterAuthenticator";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04FCA274267816ED00C86A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNT7AT6CLX;
+				INFOPLIST_FILE = BetterAuthenticatorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BetterAuthenticator;
+			};
+			name = Debug;
+		};
+		04FCA275267816ED00C86A9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GNT7AT6CLX;
+				INFOPLIST_FILE = BetterAuthenticatorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BetterAuthenticator;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04FCA217267816E700C86A9B /* Build configuration list for PBXProject "BetterAuthenticator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FCA263267816ED00C86A9B /* Debug */,
+				04FCA264267816ED00C86A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FCA265267816ED00C86A9B /* Build configuration list for PBXNativeTarget "BetterAuthenticator WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FCA266267816ED00C86A9B /* Debug */,
+				04FCA267267816ED00C86A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FCA269267816ED00C86A9B /* Build configuration list for PBXNativeTarget "BetterAuthenticator WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FCA26A267816ED00C86A9B /* Debug */,
+				04FCA26B267816ED00C86A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FCA26D267816ED00C86A9B /* Build configuration list for PBXNativeTarget "BetterAuthenticator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FCA26E267816ED00C86A9B /* Debug */,
+				04FCA26F267816ED00C86A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FCA270267816ED00C86A9B /* Build configuration list for PBXNativeTarget "BetterAuthenticatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FCA271267816ED00C86A9B /* Debug */,
+				04FCA272267816ED00C86A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04FCA273267816ED00C86A9B /* Build configuration list for PBXNativeTarget "BetterAuthenticatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FCA274267816ED00C86A9B /* Debug */,
+				04FCA275267816ED00C86A9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04FCA214267816E700C86A9B /* Project object */;
+}
