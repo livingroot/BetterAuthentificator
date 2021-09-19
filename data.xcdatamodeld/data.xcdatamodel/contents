@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Token" representedClassName="Token" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="token" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Tokens" representedClassName="Tokens" syncable="YES" codeGenerationType="class"/>
+    <elements>
+        <element name="Tokens" positionX="440.6484375" positionY="51.66015625" width="121.34375" height="43"/>
+        <element name="Token" positionX="634.16796875" positionY="33.51953125" width="128" height="103"/>
+    </elements>
+</model>
