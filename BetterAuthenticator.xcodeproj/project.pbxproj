@@ -42,6 +42,7 @@
 		BF6AAD3B276E707200932ADA /* codeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AAD3A276E707200932ADA /* codeView.swift */; };
 		BF6AAD3C276E707200932ADA /* codeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AAD3A276E707200932ADA /* codeView.swift */; };
 		BF6AAD3F276E749700932ADA /* CodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AAD3E276E749700932ADA /* CodeList.swift */; };
+		BF6AAD41276E8DD200932ADA /* misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AAD40276E8DD200932ADA /* misc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		BF6AAD33276E53F900932ADA /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		BF6AAD3A276E707200932ADA /* codeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeView.swift; sourceTree = "<group>"; };
 		BF6AAD3E276E749700932ADA /* CodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeList.swift; sourceTree = "<group>"; };
+		BF6AAD40276E8DD200932ADA /* misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = misc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 				04D43F5726785C260026FC1E /* ScannerView.swift */,
 				041889552684BB1D003F8B71 /* EditView.swift */,
 				BF6AAD33276E53F900932ADA /* extensions.swift */,
+				BF6AAD40276E8DD200932ADA /* misc.swift */,
 			);
 			path = BetterAuthenticator;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				BF6AAD32276E3CB900932ADA /* CodeList.swift in Sources */,
 				BF6AAD3B276E707200932ADA /* codeView.swift in Sources */,
 				041889562684BB1D003F8B71 /* EditView.swift in Sources */,
+				BF6AAD41276E8DD200932ADA /* misc.swift in Sources */,
 				04696F5F26801C7C00F742CA /* storage.swift in Sources */,
 				04FCA220267816E800C86A9B /* BetterAuthenticatorApp.swift in Sources */,
 				04D43F5826785C270026FC1E /* ScannerView.swift in Sources */,
@@ -611,7 +615,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "watch Extension/watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				ENABLE_PREVIEWS = YES;
@@ -621,7 +625,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp.watchkitappextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -638,7 +642,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "watch Extension/watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				ENABLE_PREVIEWS = YES;
@@ -648,7 +652,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp.watchkitappextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -669,7 +673,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = watch/watch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				IBSC_MODULE = watch_Extension;
 				INFOPLIST_FILE = watch/Info.plist;
@@ -678,7 +682,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -700,7 +704,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = watch/watch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				IBSC_MODULE = watch_Extension;
 				INFOPLIST_FILE = watch/Info.plist;
@@ -709,7 +713,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -844,7 +848,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BetterAuthenticator/BetterAuthenticator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"BetterAuthenticator/Preview Content\"";
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				ENABLE_PREVIEWS = YES;
@@ -854,7 +858,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -870,7 +874,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BetterAuthenticator/BetterAuthenticator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"BetterAuthenticator/Preview Content\"";
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				ENABLE_PREVIEWS = YES;
@@ -880,7 +884,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
