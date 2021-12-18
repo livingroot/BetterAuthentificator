@@ -10,57 +10,18 @@ struct ContentView: View {
 
 	@ObservedObject var tokensdb = storage.shared;
 	
-	@State var copymsgshow = false;
-	@State var editmode = false;
+	@State var copymsgshow:Bool = false;
+	@State var editmode:Bool = false;
+	
     var body: some View {
 		NavigationView {
 			VStack{
-				List{
-					ForEach(tokensdb.tokens){ token in
-						VStack {
-							if(!editmode){
-								if(tokensdb.expired > 0.2){
-									Text(token.code.group(3))
-										.font(.system(size: 42))
-										.gradientForeground([Color.green,Color.blue], tokensdb.expired - 0.2)
-								} else {
-									Text(token.code.group(3))
-										.font(.system(size: 42))
-										.foregroundColor(.red)
-								}
-							} else {
-								HStack{
-									NavigationLink(
-										destination: EditView(tokenid: token.id, label: token.name)
-									){
-										Text(token.code.group(3))
-									}.font(.system(size: 42))
-									Spacer()
-									//Image(systemName: "line.horizontal.3")
-								}
-							}
-							if(token.name.count > 0){
-								Text(token.name)
-									.font(.footnote)
-									.foregroundColor(Color.gray)
-							}
-							//Divider()
-						}.frame(maxWidth: .infinity)
-						//.listRowSeparator(.hidden)
-						.onTapGesture {
-							//self.action(false)
-							if(editmode) { return; }
-							UIPasteboard.general.string = token.code;
-							if(!copymsgshow){
-								copymsgshow = true;
-								Timer.scheduledTimer(withTimeInterval: 4.0, repeats: false) { ttt in
-									copymsgshow = false;
-									ttt.invalidate();
-								}
-							}
-						}
-					}//onMove
-				}.listStyle(PlainListStyle())
+				codeList(
+					tokens: tokensdb.tokens,
+					expire: tokensdb.expired,
+					editmode: editmode,
+					copymsgshow: $copymsgshow
+				)
 				.navigationBarTitleDisplayMode(.automatic)
 				.navigationBarItems(
 				leading:
@@ -72,7 +33,7 @@ struct ContentView: View {
 						} else {
 							Text("Done")
 						}
-					}.font(.title2),
+					}.font(.system(size: 18.0)),
 				trailing:
 					HStack{
 						NavigationLink(
@@ -80,13 +41,13 @@ struct ContentView: View {
 							label: {
 								Image(systemName: "plus").padding(.horizontal, 4)
 							}
-						).font(.title2)
+						).font(.system(size: 18.0))
 						NavigationLink(
 							destination: ScannerView(),
 							label: {
 								Image(systemName: "qrcode").padding(.horizontal, 4)
 							}
-						).font(.title2)
+						).font(.system(size: 18.0))
 					}
 				)
 				if(copymsgshow){
@@ -111,15 +72,22 @@ struct copymsg: View{
 	}
 }
 
-extension UIScreen{
-   static let width = UIScreen.main.bounds.size.width
-   static let height = UIScreen.main.bounds.size.height
-   static let size = UIScreen.main.bounds.size
-}
-
 struct ContentView_Previews: PreviewProvider {
+	static var tokensdb = { () -> storage in
+		let dummy = storage();
+		
+		dummy.tokens.append(tokenst(token: "", name: "preview", code: "000000"))
+		dummy.tokens.append(tokenst(token: "", name: "preview", code: "123456"))
+		
+		return dummy;
+	};
+
     static var previews: some View {
-        ContentView()
+		ContentView(tokensdb: tokensdb(), copymsgshow: true, editmode: false)
+        ContentView(tokensdb: tokensdb(), copymsgshow: false, editmode: true)
+        ContentView(tokensdb: tokensdb(), copymsgshow: true, editmode: false)
+			.previewDevice("iPhone SE (2nd generation)")
+        
     }
 }
 

@@ -16,23 +16,7 @@ struct ContentView: View {
     var body: some View {
         VStack{
 			if(!tokensdb.tokens.isEmpty){
-				ScrollView{
-					ForEach(tokensdb.tokens){ token in
-						if(tokensdb.expired > 0.2){
-							Text(token.code.group(3))
-								.font(.title)
-								.gradientForeground([Color.green, Color.blue], tokensdb.expired - 0.2)
-						} else {
-							Text(token.code.group(3))
-								.font(.title)
-								.foregroundColor(.red)
-						}
-						Text(token.name)
-							.font(.caption2)
-							.foregroundColor(.gray)
-						Divider()
-					}
-				}
+				CodeList(tokens: tokensdb.tokens, expire: tokensdb.expired)
 			} else if(loading){
 				Text("Loading...")
 			} else {
@@ -47,7 +31,6 @@ struct ContentView: View {
 					}
 				} 
 			}
-			//ProgressView(value: 0.5)
 		}.onChange(of: scenePhase) { newPhase in
 			if newPhase == .active {
 				if(!justloaded){
@@ -62,7 +45,17 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static var tokensdb = { () -> storage in
+		let dummy = storage();
+		
+		dummy.tokens.append(tokenst(token: "", name: "preview", code: "000000"))
+		dummy.tokens.append(tokenst(token: "", name: "preview", code: "123456"))
+		
+		return dummy;
+	};
+
     static var previews: some View {
-        ContentView()
+		ContentView(tokensdb: tokensdb())
+        
     }
 }

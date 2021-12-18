@@ -18,10 +18,11 @@ final class storage: ObservableObject,Identifiable {
 	@Published var tokens: [tokenst] = [tokenst]();
 	static let shared = storage();
 	private var keych = keychain();
-	@Published var expired:Double = 0.0;
+	@Published var expired:Double = 1.0;
 	var watch = WC();
 	
 	init(){
+		
 		self.load();
 		reftimer();
 	}
