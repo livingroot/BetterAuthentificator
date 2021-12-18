@@ -40,6 +40,10 @@ struct ContentView: View {
 			} else if newPhase == .background {
 				self.justloaded = false;
 			}
+		}.onAppear {
+			if(tokensdb.tokens.isEmpty){
+				tokensdb.watch.send(["ask": "ask"]);
+			}
 		}
     }
 }

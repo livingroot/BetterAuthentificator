@@ -29,6 +29,7 @@ struct CodeList: View {
 				Text(token.name)
 					.font(.caption2)
 					.foregroundColor(.gray)
+					.padding(.bottom, 4)
 				Divider()
 			}
 		}

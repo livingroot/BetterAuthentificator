@@ -18,8 +18,11 @@ struct ScannerView: View {
             codeTypes: [.qr],
             completion: { result in
                 if case let .success(code) = result {
-					tokensdb.addfromurl(url: URL(string: code)!)
-					self.presentationMode.wrappedValue.dismiss()
+					let url = URL(string: code);
+					if(url != nil){
+						tokensdb.addfromurl(url: url!)
+						self.presentationMode.wrappedValue.dismiss()
+					}
                 }
             }
         ).navigationBarTitleDisplayMode(.inline)
