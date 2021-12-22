@@ -43,6 +43,7 @@
 		BF6AAD3C276E707200932ADA /* codeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AAD3A276E707200932ADA /* codeView.swift */; };
 		BF6AAD3F276E749700932ADA /* CodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AAD3E276E749700932ADA /* CodeList.swift */; };
 		BF6AAD41276E8DD200932ADA /* misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AAD40276E8DD200932ADA /* misc.swift */; };
+		BFAC20E72773D3E900D455C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFAC20E92773D3E900D455C4 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,7 @@
 		BF6AAD3A276E707200932ADA /* codeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeView.swift; sourceTree = "<group>"; };
 		BF6AAD3E276E749700932ADA /* CodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeList.swift; sourceTree = "<group>"; };
 		BF6AAD40276E8DD200932ADA /* misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = misc.swift; sourceTree = "<group>"; };
+		BFAC20E82773D3E900D455C4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 				04FCA28226784F7000C86A9B /* info.swift */,
 				04FCA223267816EA00C86A9B /* Assets.xcassets */,
 				04FCA228267816EA00C86A9B /* Info.plist */,
+				BFAC20E92773D3E900D455C4 /* InfoPlist.strings */,
 				04FCA225267816EA00C86A9B /* Preview Content */,
 				04FCA27B26784F3500C86A9B /* AddView.swift */,
 				04D43F5726785C260026FC1E /* ScannerView.swift */,
@@ -497,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FCA227267816EA00C86A9B /* Preview Assets.xcassets in Resources */,
+				BFAC20E72773D3E900D455C4 /* InfoPlist.strings in Resources */,
 				0417967426875BBE0032C996 /* Localizable.strings in Resources */,
 				04FCA224267816EA00C86A9B /* Assets.xcassets in Resources */,
 			);
@@ -606,6 +610,14 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		BFAC20E92773D3E900D455C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFAC20E82773D3E900D455C4 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -615,7 +627,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "watch Extension/watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				ENABLE_PREVIEWS = YES;
@@ -625,7 +637,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp.watchkitappextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -642,7 +654,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "watch Extension/watch Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				ENABLE_PREVIEWS = YES;
@@ -652,7 +664,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp.watchkitappextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -673,7 +685,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = watch/watch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				IBSC_MODULE = watch_Extension;
 				INFOPLIST_FILE = watch/Info.plist;
@@ -682,7 +694,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -704,7 +716,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = watch/watch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				IBSC_MODULE = watch_Extension;
 				INFOPLIST_FILE = watch/Info.plist;
@@ -713,7 +725,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -848,7 +860,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BetterAuthenticator/BetterAuthenticator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"BetterAuthenticator/Preview Content\"";
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				ENABLE_PREVIEWS = YES;
@@ -858,7 +870,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -874,7 +886,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BetterAuthenticator/BetterAuthenticator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"BetterAuthenticator/Preview Content\"";
 				DEVELOPMENT_TEAM = GNT7AT6CLX;
 				ENABLE_PREVIEWS = YES;
@@ -884,7 +896,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = pw.snostorm.BetterAuthenticator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
