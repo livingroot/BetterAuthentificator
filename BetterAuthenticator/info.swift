@@ -31,7 +31,7 @@ struct info: View {
 					HStack{
 						Image(systemName: "cloud.fill")
 							.frame(width: 45)
-						Text("Tokens are stored in icloud keychain")
+						Text("Tokens are stored in iСloud keychain")
 					}
 					Divider()
 				}

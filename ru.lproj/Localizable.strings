@@ -11,7 +11,7 @@
 "Cancel" = "Отмена";
 "Before you remove this account, make sure that you can sign in to your account. This action can't be undone." = "Перед удалением этого аккаунта убедитесь, что Вы сможете войти в свой аккаунт без кода подтверждения. Это действие нельзя будет отменить.";
 "Save" = "Сохранить";
-"Tokens are stored in icloud keychain" = "Токены хранятся в защищённом хранилище icloud";
+"Tokens are stored in iСloud keychain" = "Токены хранятся в защищённом хранилище iСloud";
 "Free & without ads" = "Бесплатно и без рекламы";
 "Apple Watch support" = "Поддержка Apple Watch";
 "Scanning QR Code" = "Сканирование QR кода";
