@@ -137,6 +137,8 @@
 		04FCA23E267816EA00C86A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FCA27B26784F3500C86A9B /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		04FCA28226784F7000C86A9B /* info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = info.swift; sourceTree = "<group>"; };
+		BF68B98C27D75FE70087BA99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BF68B98D27D760580087BA99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF6AAD31276E3CB900932ADA /* CodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeList.swift; sourceTree = "<group>"; };
 		BF6AAD33276E53F900932ADA /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		BF6AAD3A276E707200932ADA /* codeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeView.swift; sourceTree = "<group>"; };
@@ -606,6 +608,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0417967726875BC50032C996 /* ru */,
+				BF68B98C27D75FE70087BA99 /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BFAC20E82773D3E900D455C4 /* ru */,
+				BF68B98D27D760580087BA99 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
