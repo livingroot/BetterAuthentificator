@@ -18,7 +18,8 @@ class keychain {
 	let isSync = kCFBooleanTrue;
 	
 	func set(_ key: String, _ value: String, label: String = "") -> Bool{
-		let bundleid = Bundle.main.bundleIdentifier ?? "" 
+		let bundleid = Bundle.main.bundleIdentifier ?? ""
+		
 		let query: [String: Any] = [
 			kSecClass as String: kSecClassGenericPassword,
 			kSecAttrAccount as String: key.data(using: .utf8)!,
@@ -29,15 +30,19 @@ class keychain {
 			//kSecAttrAccessGroup as String: bundleid.data(using: .utf8)!,
 			kSecValueData as String: value.data(using: .utf8)!
 		]
+		
 		let status = SecItemAdd(query as CFDictionary, nil)
 		if(status != 0){
 			print("Unable to add item to keychain \(status)")
 			return false;
 		}
+		
 		return true;
 	}
+	
 	func get(_ key: String) -> String{	
 		var ref: AnyObject?
+		
 		let query = [
 			kSecClass: kSecClassGenericPassword,
 			kSecAttrAccount as String: key.data(using: .utf8)!,
@@ -46,6 +51,7 @@ class keychain {
 			kSecAttrSynchronizable as String: isSync!,
 			kSecReturnData: true
 		] as CFDictionary
+		
 		let status = SecItemCopyMatching(query, &ref)
 		if let result = ref as? NSDictionary, let passwordData = result[kSecValueData] as? Data {
 			 //print(result)
@@ -53,12 +59,17 @@ class keychain {
 			 print(str)
 			 return str;
 		}
+		
 		print("GET finished with status: \(status)")
+		
 		return "";
 	}
+	
 	func getAll() -> [[String: Any]]?{
 		//let bundleid = Bundle.main.bundleIdentifier ?? "" 
+		
 		var ref: AnyObject?
+		
 		let query = [
 			kSecClass: kSecClassGenericPassword,
 			//kSecAttrService as String: bundleid.data(using: .utf8)!,
@@ -67,7 +78,9 @@ class keychain {
 			kSecReturnAttributes: true,
 			kSecReturnData: true
 		] as CFDictionary
+		
 		let status = SecItemCopyMatching(query, &ref)
+		
 		if let result = ref as? [[String: Any]]  {
 			 let items = result.map { attributes -> [String: Any] in
 				var item = [String: Any]()
@@ -100,45 +113,58 @@ class keychain {
 			 //print(items);
 			 return items;
 		}
+		
 		print("Operation finished with status: \(status)")
+		
 		return nil;
 	}
+	
 	func updateLabel(key:String, label:String) -> Bool{
 		let query: [String: Any] = [
 			kSecClass as String: kSecClassGenericPassword,
 			kSecAttrAccount as String: key.data(using: .utf8)!,
 			kSecAttrSynchronizable as String: isSync!,
 		];
+		
 		let upd: [String: Any] = [
 			kSecAttrLabel as String: label.data(using: .utf8)!
 		];
+		
 		let status = SecItemUpdate(query as CFDictionary, upd as CFDictionary)
 		if(status != 0) {
 			print("Error while updating label \(status)")
 			return false;
 		}
+		
 		return true;
 	}
+	
 	func update(key:String , upd: CFDictionary) -> Bool{
 		let query: [String: Any] = [
 			kSecClass as String: kSecClassGenericPassword,
 			kSecAttrAccount as String: key.data(using: .utf8)!,
 			kSecAttrSynchronizable as String: isSync!,
 		];
+		
 		let status = SecItemUpdate(query as CFDictionary, upd)
 		if(status != 0) {
 			print("Error while updating \(status)")
 			return false;
 		}
+		
 		return true;
 	}
+	
 	func del(key: String){
+		
 		if(key == "") { return; }
+		
 		let query = [
 			kSecClass: kSecClassGenericPassword,
 			kSecAttrAccount as String: key.data(using: .utf8)!,
 			kSecAttrSynchronizable as String: isSync!
 		] as CFDictionary
+		
 		let status = SecItemDelete(query)
 		if(status != 0){
 			print("Error while deleting \(status)")

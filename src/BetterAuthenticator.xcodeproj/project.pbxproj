@@ -262,19 +262,14 @@
 		04FCA21E267816E800C86A9B /* BetterAuthenticator */ = {
 			isa = PBXGroup;
 			children = (
-				BF6AAD30276E3C9700932ADA /* elements */,
+				BF4B45442982F664006B113A /* view */,
 				04696FB12680ED6000F742CA /* BetterAuthenticator.entitlements */,
 				04696F47267DCECE00F742CA /* shared */,
 				04FCA21F267816E800C86A9B /* BetterAuthenticatorApp.swift */,
-				04FCA221267816E800C86A9B /* ContentView.swift */,
-				04FCA28226784F7000C86A9B /* info.swift */,
 				04FCA223267816EA00C86A9B /* Assets.xcassets */,
 				04FCA228267816EA00C86A9B /* Info.plist */,
 				BFAC20E92773D3E900D455C4 /* InfoPlist.strings */,
 				04FCA225267816EA00C86A9B /* Preview Content */,
-				04FCA27B26784F3500C86A9B /* AddView.swift */,
-				04D43F5726785C260026FC1E /* ScannerView.swift */,
-				041889552684BB1D003F8B71 /* EditView.swift */,
 				BF6AAD33276E53F900932ADA /* extensions.swift */,
 				BF6AAD40276E8DD200932ADA /* misc.swift */,
 			);
@@ -305,6 +300,19 @@
 				04FCA23E267816EA00C86A9B /* Info.plist */,
 			);
 			path = BetterAuthenticatorUITests;
+			sourceTree = "<group>";
+		};
+		BF4B45442982F664006B113A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				04FCA221267816E800C86A9B /* ContentView.swift */,
+				04FCA27B26784F3500C86A9B /* AddView.swift */,
+				04D43F5726785C260026FC1E /* ScannerView.swift */,
+				041889552684BB1D003F8B71 /* EditView.swift */,
+				04FCA28226784F7000C86A9B /* info.swift */,
+				BF6AAD30276E3C9700932ADA /* elements */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		BF6AAD30276E3C9700932ADA /* elements */ = {

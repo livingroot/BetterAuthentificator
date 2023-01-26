@@ -10,6 +10,7 @@ import WatchConnectivity
 
 class WC: NSObject, WCSessionDelegate, ObservableObject{
 	var session: WCSession
+	
     init(session: WCSession = .default){
 		self.session = session
 		super.init()
@@ -31,16 +32,23 @@ class WC: NSObject, WCSessionDelegate, ObservableObject{
     }
     
     public func send(_ message: [String: Any]){
-		if(!WCSession.isSupported()){ return; }
+		if(!WCSession.isSupported()){
+			return;
+		}
+		
 		self.session.sendMessage(message, replyHandler: nil)
 	}
+	
     #if os(iOS)
+    
     func sessionDidBecomeInactive(_ session: WCSession) {
 		//print("didbecomeinactive")
     }
+    
     func sessionDidDeactivate(_ session: WCSession) {
         //print("inactivate")
     }
+    
 	func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
 		DispatchQueue.main.async {
 			if(message["ask"] != nil){
@@ -56,6 +64,7 @@ class WC: NSObject, WCSessionDelegate, ObservableObject{
 			}
 		}
 	}
+	
     #elseif os(watchOS)
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         DispatchQueue.main.async {
@@ -64,7 +73,15 @@ class WC: NSObject, WCSessionDelegate, ObservableObject{
 				let newtokens:[[String]] = message["add"] as! [[String]];
 				for i in 0...(newtokens.count - 1){
 					let newtoken = newtokens[i];
-					storage.shared.tokens.append(tokenst(id: UUID(uuidString: newtoken[0]) ?? UUID(), token: newtoken[1], name: newtoken[2], order: 0, code: otp().gen(newtoken[1])));
+					storage.shared.tokens.append(
+						tokenst(
+							id: UUID(uuidString: newtoken[0]) ?? UUID(),
+							token: newtoken[1],
+							name: newtoken[2],
+							order: 0,
+							code: otp().gen(newtoken[1])
+						)
+					);
 				}
 			} else if(message["remove"] != nil){
 				let tmp = message["remove"] as! String

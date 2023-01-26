@@ -40,6 +40,7 @@ class otp {
 		
 		return String(out).padLeft(length: 6, pad: "0");
 	}
+	
 	func hmac(hashName:String, message:Data, key:Data) -> Data {
 		let algos = ["SHA1":   (kCCHmacAlgSHA1,   CC_SHA1_DIGEST_LENGTH),
 					 "MD5":    (kCCHmacAlgMD5,    CC_MD5_DIGEST_LENGTH),
@@ -63,6 +64,7 @@ class otp {
 		return macData
 	}
 }
+
 extension String{
 	func padLeft(length:Int, pad:String) -> String{
 		var out:String = self;
@@ -72,6 +74,7 @@ extension String{
 		return out;
 	}
 }
+
 /*
 extension Data {
     struct HexEncodingOptions: OptionSet {

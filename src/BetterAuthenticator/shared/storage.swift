@@ -22,10 +22,10 @@ final class storage: ObservableObject,Identifiable {
 	var watch = WC();
 	
 	init(){
-		
 		self.load();
 		reftimer();
 	}
+	
 	func load(){
 		let tmp = keych.getAll();
 		if(tmp != nil){
@@ -54,7 +54,11 @@ final class storage: ObservableObject,Identifiable {
 			}
 		}
 	}
-	func reftimer(){ //updating codes
+	
+	/**
+	 * updating codes
+    */
+	func reftimer(){
 		let period:UInt64 = 30;
 		var halfsecs = UInt64(Date().timeIntervalSince1970) / period; 
 		var timeForNextPeriod = Date(timeIntervalSince1970: TimeInterval((halfsecs + 1) * period))
@@ -64,7 +68,11 @@ final class storage: ObservableObject,Identifiable {
 			if(Date() >= timeForNextPeriod){
 				halfsecs = UInt64(Date().timeIntervalSince1970) / period; 
 				timeForNextPeriod = Date(timeIntervalSince1970: TimeInterval((halfsecs + 1) * period))
-				if(self.tokens.count == 0){ return; }
+				
+				if(self.tokens.count == 0){
+					return;
+				}
+				
 				for i in 0 ... (self.tokens.count - 1) {
 					self.tokens[i].code = otp().gen(self.tokens[i].token);
 				}
@@ -73,38 +81,59 @@ final class storage: ObservableObject,Identifiable {
 			self.expired = timediff/30;
 		}
 	}
+	
 	func add(key: UUID = UUID(), secret: String, label: String) -> Bool{
-		if(secret == ""){ return false; }
+		
+		if(secret == ""){
+			return false;
+		}
+		
 		if(keych.set(key.uuidString, secret, label: label)){
 			let newtoken = tokenst(id: key, token: secret, name: label, code: otp().gen(secret));
 			self.tokens.append(newtoken);
 			return true;
-		} else { return false; }
+		}
+		
+		return false;
 	}
+	
 	func updLabel(id: UUID, newLabel: String, keychain: Bool = true) -> Bool{
-		if(self.tokens.isEmpty){ return true; }
+		
+		if(self.tokens.isEmpty){
+			return true;
+		}
+		
 		for i in 0 ... (self.tokens.count - 1) {
 			if(id == self.tokens[i].id){
 				self.tokens[i].name = newLabel;
 				break;
 			}
 		}
+		
 		if(keychain){
 			return keych.updateLabel(key: id.uuidString, label: newLabel);
-		} else { return true; }
+		}
+		
+		return true;
 	}
+	
 	func del(id: UUID, keychain:Bool = true){
-		if(self.tokens.isEmpty){ return; }
+		if(self.tokens.isEmpty){
+			return;
+		}
+		
 		for i in 0 ... (self.tokens.count - 1) {
 			if(id == self.tokens[i].id){
 				self.tokens.remove(at: i);
 				break;
 			}
 		}
+		
 		if(keychain){
 			keych.del(key: id.uuidString);
 		}
 	}
+	
 	#if os(iOS)
 	func addfromurl(url: URL){
 		if(url.scheme == "otpauth" && url.host == "totp"){
@@ -113,8 +142,11 @@ final class storage: ObservableObject,Identifiable {
 				if(label != ""){
 					label.removeFirst()
 				}
+				
 				let secret = url.params()["secret"];
-				if(secret == nil || secret == ""){ return; }
+				if(secret == nil || secret == ""){
+					return;
+				}
 				
 				let newid = UUID();
 				_ = self.add(key: newid, secret: secret!, label: label);
@@ -122,7 +154,6 @@ final class storage: ObservableObject,Identifiable {
 				self.watch.send(["add": [[newid.uuidString, secret, label]]])
 			}
 		}
-		//otpauth-migration://offline?data=CkkKIEtTUlRHMktTQTc0RUNQMjJCUlVZU0RFRUJNQzJHNzdIEhNraXR5YW5uekBFcGljIEdhbWVzGgpFcGljIEdhbWVzIAEoATACEAE%3D
 	}
 	#endif
 }
